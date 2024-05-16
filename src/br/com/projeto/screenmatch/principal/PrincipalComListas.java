@@ -17,7 +17,12 @@ public class PrincipalComListas {
         Serie lost = new Serie("Lost", 2001, 10);
         lost.avalia(7);
 
+        List<Titulo> listaNovoModelo = Arrays.asList(
+                new Filme("Jorge", 1999),
+                new Serie("SWAT", 2002, 10)
+        );
 
+        
         List<Titulo> listas = new LinkedList<>();
         listas.add(filmedopaulo);
         listas.add(meuFilme);
