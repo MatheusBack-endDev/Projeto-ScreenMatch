@@ -8,17 +8,18 @@ import java.util.*;
 
 public class PrincipalComListas {
     public static void main(String[] args) {
-        Filme meuFilme = new Filme("O poderoso Chefão", 1970);
+
+        Filme meuFilme = new Filme("dogville", 1970);
         meuFilme.avalia(3);
-        Filme outroFilme = new Filme("Avatar", 2023);
+        Filme outroFilme = new Filme("avatar", 2023);
         outroFilme.avalia(6);
-        Filme filmedopaulo = new Filme("Dogville", 2002);
+        Filme filmedopaulo = new Filme("filme",2002);
         filmedopaulo.avalia(10);
         Serie lost = new Serie("Lost", 2001, 10);
         lost.avalia(7);
 
         List<Titulo> listaNovoModelo = Arrays.asList(
-                new Filme("Jorge", 1999),
+                new Filme( "filme 2",1999),
                 new Serie("SWAT", 2002, 10)
         );
 
@@ -31,7 +32,7 @@ public class PrincipalComListas {
 
         Collections.sort(listas);
 
-        // a linha de codigo 34 faz a mesma coisa que a linha 36 e 37, imprime o toString
+        // a linha de codigo 35 faz a mesma coisa que a linha 36 e 37, imprime o toString
         // listas.forEach(System.out::println);
         for (Titulo titulo : listas) {
             System.out.println(titulo.toString());

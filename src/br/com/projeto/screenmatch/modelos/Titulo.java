@@ -1,12 +1,20 @@
 package br.com.projeto.screenmatch.modelos;
 
+import com.google.gson.annotations.SerializedName;
+
+import java.util.Scanner;
+
 public class Titulo implements Comparable<Titulo> {
+
+    @SerializedName("Title")
     private String nome;
+    @SerializedName("Year")
     private int anoDelancamento;
     private boolean incluidoNoPlano;
     private double somaAvaliacoes;
     private int totalDeAvaliacoes;
     private int duracaoEmMinutos;
+
 
     public Titulo(String nome, int anoDelançamento) {
         this.nome = nome;
@@ -77,4 +85,12 @@ public class Titulo implements Comparable<Titulo> {
 //            return 0;
 //        }
 //    }
+
+
+    @Override
+    public String toString() {
+        return "nome='" + nome + '\'' +
+                ", anoDelancamento=" + anoDelancamento +
+                '}';
+    }
 }

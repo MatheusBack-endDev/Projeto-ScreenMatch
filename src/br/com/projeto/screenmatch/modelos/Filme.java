@@ -2,12 +2,16 @@ package br.com.projeto.screenmatch.modelos;
 
 import br.com.projeto.screenmatch.calculo.Classificavel;
 
+import java.util.Scanner;
+
 public class Filme extends Titulo implements Classificavel {
+
     private String diretor;
 
-    public Filme(String nome, int anoDeLancamento ) {
-        super(nome, anoDeLancamento);
+    public Filme(String nome, int anoDelançamento) {
+        super(nome, anoDelançamento);
     }
+
 
     public String getDiretor() {
         return diretor;
